@@ -11,6 +11,7 @@ import { useQuery } from "convex/react";
 import { CalendarDays, MapPin, Ticket, Users } from "lucide-react";
 import { useParams } from "next/navigation";
 import Image from "next/image";
+import JoinQueue from "@/components/JoinQueue";
 
 export default function EventPage() {
     const { user } = useUser();
