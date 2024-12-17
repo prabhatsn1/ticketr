@@ -48,7 +48,9 @@ export default function PurchaseTicket({ eventId }: { eventId: Id<"events"> }) {
     return () => clearInterval(interval);
   }, [offerExpiresAt, isExpired]);
 
-  const handlePurchase = async () => {};
+  const handlePurchase = async () => {
+    setIsLoading(false);
+  };
 
   if (!user || !queuePosition || queuePosition.status !== "offered") {
     return null;
